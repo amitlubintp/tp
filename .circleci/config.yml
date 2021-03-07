@@ -10,7 +10,7 @@ jobs:
     executor: python/default
     steps:
      - run:
-          command: curl -X POST "https://api.testproject.io/v2/projects/-VKPLWYr10C9_ZT_5tLjOA/jobs/2hxLvcC-sU2FV1ejcc4dSw/run" -H "accept:application/json" -H "Authorization:ng840FiIYQgh_mvaBmrmpompfgTc16m2SiTZ0ft3nB81" -H "Content-Type:application/json" -d "{ \"agentId\":\"YjEQcnqq7kGJYTh4vBrfPg\", \"browsers\":[ \"Chrome\", \"Edge\", \"Safari\" ], \"queue\":true, \"restartDriver\":false, \"testParameters\":[ { \"testId\":\"UKAgVXbepk6mBksp5yC5mA\", \"dataSourceId\":\"EjIIrm4VdU6akzDvPP04ow\" } ]}"
+          command: curl -X POST "https://api.testproject.io/v2/projects/-VKPLWYr10C9_ZT_5tLjOA/jobs/2hxLvcC-sU2FV1ejcc4dSw/run" -H "accept:application/json" -H "Authorization:ng840FiIYQgh_mvaBmrmpompfgTc16m2SiTZ0ft3nB81" -H "Content-Type:application/json" -d "{ \"agentId\":\"YjEQcnqq7kGJYTh4vBrfPg\", \"browsers\":[ \"Chrome\", \"Edge\" ], \"queue\":true, \"restartDriver\":false, \"testParameters\":[ { \"testId\":\"UKAgVXbepk6mBksp5yC5mA\", \"dataSourceId\":\"EjIIrm4VdU6akzDvPP04ow\" } ]}"
           name: Run Test On Build
 workflows:
   main:
