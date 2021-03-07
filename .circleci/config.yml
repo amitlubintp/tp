@@ -10,7 +10,7 @@ jobs:
     executor: python/default
     steps:
      - run:
-          command: curl -X POST "https://api.testproject.io/v2/projects/-VKPLWYr10C9_ZT_5tLjOA/tests/UKAgVXbepk6mBksp5yC5mA/run" -H "accept:application/json" -H "Authorization:ng840FiIYQgh_mvaBmrmpompfgTc16m2SiTZ0ft3nB81" -H "Content-Type:application/json" -d "{ \"agentId\":\"YjEQcnqq7kGJYTh4vBrfPg\", \"browser\":\"Chrome\", \"queue\":true, \"testParameters\":{ \"ApplicationURL\":\"https://booking.com\", \"Location\":\"Dead Sea\", \"in\":\"10\", \"out\":\"15\" }}"
+          command: curl -X POST "https://api.testproject.io/v2/projects/-VKPLWYr10C9_ZT_5tLjOA/jobs/E9wd6FJiRUu_ZkzD9e-qww/run" -H "accept:application/json" -H "Authorization:ng840FiIYQgh_mvaBmrmpompfgTc16m2SiTZ0ft3nB81" -H "Content-Type:application/json" -d "{ \"agentId\":\"YjEQcnqq7kGJYTh4vBrfPg\", \"browsers\":[ \"Chrome\", \"Edge\", \"Safari\" ], \"queue\":true, \"restartDriver\":false, \"testParameters\":[ { \"testId\":\"UKAgVXbepk6mBksp5yC5mA\", \"data\":[ { \"Location\":\"Dead Sea\", \"in\":\"10\", \"out\":\"15\" } ] } ]}"
           name: Run Test On Build
 workflows:
   main:
