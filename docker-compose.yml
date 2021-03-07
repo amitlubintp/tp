@@ -6,6 +6,8 @@ services:
     depends_on:
       - chrome
       - firefox
+    volumes:
+      - /path/to/host/folder:/var/testproject/agent
     environment:
       TP_AGENT_TEMP: "true"
       TP_API_KEY: $TP_API_KEY
